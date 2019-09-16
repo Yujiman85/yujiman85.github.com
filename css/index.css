@@ -8,7 +8,6 @@ body {
   min-height: 100%;
   height: 100%;
   background: #fff;
-  padding-bottom: 200px;
 }
 
 .container {
@@ -116,6 +115,18 @@ body {
   font-size: 0.9em;
 }
 
+.header {
+  font-size: 3em;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 6px 0 6px 0;
+  color: white;
+}
+
+.aboutme {
+  background-color: #0487e6;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -173,6 +184,26 @@ span {
     margin-bottom: 8px;
     border-bottom: 0.5px solid gray;
     padding-bottom: 8px;
+  }
+
+  .header {
+    font-size: 1.5em;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 6px 0 6px 0;
+    color: white;
+}
+
+  .aboutMeText {
+    font-size: 0.8em;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  ul li {
+    font-size: 0.8em;
   }
 
 }
