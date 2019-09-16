@@ -116,6 +116,7 @@ body {
 }
 
 .header {
+  text-align: center;
   font-size: 3em;
   border-radius: 5px;
   padding: 10px;
