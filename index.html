@@ -12,7 +12,7 @@
 <body>
 	<div class="container">
     <p id="topname">Ty Jenkins</p><br>
-    <img style="margin-bottom: -13px; width: 80%;" src="/images/tybelgium.jpg" alt="Ty in Belgium" title="It's me in Belgium!">
+    <img id="tybelgium" src="/images/tybelgium.jpg" alt="Ty in Belgium" title="It's me in Belgium!">
     <p style="font-size: 0.8em">
       Location: Grand-Place in Brussels, Belgium
     </p><br>
@@ -23,22 +23,36 @@
     <a href="https://www.facebook.com/Ty-Yuji/" target="_blank"><img class="socialMediaIcons" src="/images/facebookicon.png" alt="Facebook Icon" height="25" /> </a>
     <a href="https://www.instagram.com/spacemanci/" target="_blank"><img class="socialMediaIcons" src="/images/instagramicon.png" alt="Instagram Icon" height="25" /> </a>
     <a href="https://www.twitter.com/spacemanci/" target="_blank"><img class="socialMediaIcons" src="/images/twittericon.png" alt="Twitter Icon" height="25" /> </a>
-    <hr>
-      <p>What would you like to see?</p>
-      <div class="grid">
-        <div class="rowbanner aboutme">
-          <span id="aboutme" ><a href="./aboutme.html">About Me</a></span>
-        </div>
-        <div class="rowbanner resume">
-          <span id="resume" ><a href="./resume.html">Resume/CV</a></span>
-        </div>
-        <div class="rowbanner projects">
-          <span id="projects" ><a href="./projects.html">Projects</a></span>
-        </div>
-        <div class="rowbanner linkedin">
-          <span id="projects" ><a href="https://www.linkedin.com/in/ty-jenkins/" target="_blank">LinkedIn</a></span>
-        </div>
+    <div class="sectionLinks">
+      <div class="pageLink aboutme"><a href="/aboutme.html">About Me</a></div>
+      <div class="pageLink resume"><a href="/resume.html">Resume</a></div>
+      <div class="pageLink linkedin"><a href="https://www.linkedin.com/in/ty-jenkins/" target="_blank">LinkedIn</a></div>
     </div>
+    <hr>
+    <div class="projectsHeader">Projects</div>
+      <div class="projectsContainer">
+        <div class="projectPic"><a href="https://ty-smart-brain.herokuapp.com/" target="_blank"><img src="./images/smartbrain.jpg"></a></div>
+        <div class="projectDesc"><strong>Face Image Recognition App</strong><p>An app created using React. It takes an image uploaded by the user and detects
+        whether there is a face present. If so, the app will put a bounding box around the
+        face. The app can also detect multiple faces and will display the appropriate
+        amount of bounding boxes.</p>
+      </div>
+        <div class="projectLinks">
+          <a class="projectlink" href="https://ty-smart-brain.herokuapp.com/" target="_blank">App Demo</a><br>
+          <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/Smart-Brain-Frontend" target="_blank">Front End Source</a><br />
+          <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/smart-brain-api" target="_blank">Back End Source</a>
+        </div>
+        <div class="projectPic"><a href="https://weddingrsvpdemo.herokuapp.com/" target="_blank"><img src="./images/weddingrsvp.jpg"></a></div>
+        <div class="projectDesc"><strong>Wedding RSVP</strong><p>The user will enter their name and email address into a form, they will then
+        confirm the info, lastly that info will be entered into a database to create a list of
+        people attending. Afterwards an email will be sent to them confirming the RSVP.</p>
+      </div>
+        <div class="projectLinks">
+          <a class="projectlink" href="https://weddingrsvpdemo.herokuapp.com/" target="_blank">App Demo</a><br />
+          <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/weddingrsvpdemo" target="_blank">Source</a><br />
+        </div>
+      </div>
+      
     </div>
 </body>
 </html>

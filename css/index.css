@@ -7,6 +7,109 @@ html {
 body {
   min-height: 100%;
   height: 100%;
+  background: #f2f2f2;
+  padding-bottom: 200px;
+}
+
+.container {
+  min-height: 100%;
+  width: 75%;
+  text-align: center;
+  left: 12.5%;
+  top: 10%;
+  position: relative;
+}
+
+#topname {
+  margin: 0;
+  padding: 10px;
+  font-size: 2.7rem;
+}
+
+#tybelgium {
+    width: 50%;
+  }
+
+.socialMediaIcons {
+  width: 26px;
+  height: 26px;
+}
+
+.sectionLinks {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.pageLink {
+  font-size: 1.3em;
+  border-radius: 7px;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border-top: 3px solid transparent;
+}
+
+.aboutme:hover {
+  border-top: 2px solid #0487e6;
+  opacity: 1;
+  transition:all 0.3s ease;
+}
+
+.resume:hover {
+  border-top: 2px solid #ff0000;
+  opacity: 1;
+  transition:all 0.3s ease;
+}
+
+.linkedin:hover {
+  border-top: 2px solid #8000ff;
+  opacity: 1;
+  transition:all 0.3s ease;
+
+}
+
+.projectlink:hover {
+  font-size: 1.1em;
+  color: #0487e6;
+  transition:all 0.3s ease;
+}
+
+.projectsHeader {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.projectsContainer {
+  max-width: 85%;
+  display: grid;
+  grid-template-columns: 25% 55% 20%;
+  border-bottom: 1px dashed #d8d8d8;
+  align-items: center;
+  padding: 0 15px 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectPic {
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.projectPic img {
+  width: 90%;
+}
+
+.projectDesc {
+  padding: 0 10px 0 10px; 
+}
+
+.projectDesc p {
+  font-size: 0.9em;
+}
+
+.projectLinks {
 }
 
 code {
@@ -20,20 +123,9 @@ a {
   transition:all 0.3s ease;
 }
 
-.projectlink:hover {
-  font-size: 1.1em;
-  color: #0487e6;
-  transition:all 0.3s ease;
-}
-
 img {
   border-radius: 5px;
   position: relative;
-}
-
-.socialMediaIcons {
-  width: 26px;
-  height: 26px;
 }
 
 span {
@@ -44,84 +136,38 @@ span {
   font-size: 1.3em;
 }
 
-#topname {
-  margin: 0;
-  padding: 1.5rem;
-  font-size: 2.7rem;
-  font-weight: 1em;
-}
+@media screen and (max-width: 630px) {
+  #topname {
+    font-size: 2.0rem;
+  }
 
-.container {
-  min-height: 100%;
-  width: 75%;
-  text-align: center;
-  left: 12.5%;
-  top: 10%;
-  position: relative;
-  padding: 0 10px 10px 10px;
-}
+  #tybelgium {
+    width: 90%;
+    margin-bottom: -10px;
+  }
 
-.grid {
-  width: 100%;
-  left: 12.5%;
+  .pageLink {
+    font-size: 1.0em;
+  }
+
+  .projectsHeader {
+    font-size: 1.3em;
+  }
+
+  .projectsContainer {
+  max-width: 100%;
   display: grid;
-  justify-content: center;
-  grid-template-columns: 50% 50%;
-  grid-row: 25% 25%;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
+  grid-template-columns: 100%;
+  border-bottom: 1px dashed #d8d8d8;
+  align-items: center;
+  padding: 0 15px 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  }
 
-.rowbanner {
-  border: 1px solid #f2f2f2;
-  border-radius: 7px;
-  justify-content:center;
-  height:10em;
-  line-height: 10em;
-  text-align: center;
-  transition:all 0.3s ease;
-}
-
-.rowbanner:hover {
-  border: 1px solid #f2f2f2;
-  border-radius: 7px;
-  transition:all 0.3s ease;
-}
-
-.rowbanner:hover a {
-  color: white;
-  font-size: 1.2em;
-  transition:all 0.3s ease;
-}
-
-.aboutme:hover {
-  background-color: #0487e6;
-  opacity: 1;
-  transition:all 0.3s ease;
-}
-
-.resume:hover {
-  background-color: #ff0000;
-  opacity: 1;
-  transition:all 0.3s ease;
-}
-
-.projects:hover {
-  background-color: #00bb00;
-  opacity: 1;
-  transition:all 0.3s ease;
-}
-
-.linkedin:hover {
-  background-color: #8000ff;
-  opacity: 1;
-  transition:all 0.3s ease;
+  .projectLinks {
+    margin-bottom: 8px;
+    border-bottom: 0.5px solid gray;
+  }
 
 }
-
-.firstletter {
-  color: black;
-  font-size: 70px;
-  line-height: 70px;
-}
-
