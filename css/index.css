@@ -103,7 +103,7 @@ body {
 }
 
 .projectPic img:hover {
-  border: 2px solid green;
+  border: 2px solid black;
   transition:all 0.3s ease;
 }
 
