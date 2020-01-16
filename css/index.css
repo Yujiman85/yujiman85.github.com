@@ -19,6 +19,33 @@ body {
   position: relative;
 }
 
+nav {
+  text-align: center;
+  position: relative; 
+}
+
+nav a {
+  margin-right: 3px;
+}
+
+#homenav:hover {
+  border-top: 2px solid #00cc00;
+  opacity: 1;
+  transition:all 0.3s ease;
+}
+
+#aboutmenav:hover {
+  border-top: 2px solid #0487e6;
+  opacity: 1;
+  transition:all 0.3s ease;
+}
+
+#resumenav:hover {
+  border-top: 2px solid #ff0000;
+  opacity: 1;
+  transition:all 0.3s ease;
+}
+
 #topname {
   margin: 0;
   padding: 10px;
