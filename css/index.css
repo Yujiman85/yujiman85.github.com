@@ -20,12 +20,13 @@ body {
 }
 
 nav {
+  border-bottom: 0.1px solid black;
   text-align: center;
-  position: relative; 
 }
 
 nav a {
-  margin-right: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 #homenav:hover {
