@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Quicksand:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap');
 
 html {
   box-sizing: border-box;
@@ -11,9 +12,9 @@ html {
 
 body {
   margin: 0;
-  background: #121212;
+  background: rgb(255, 255, 255);
   font-family: 'Hind Siliguri', 'IBM Plex', sans-serif;
-  color: whitesmoke;
+  color: rgb(66, 66, 66);
 }
 
 .container {
@@ -37,7 +38,7 @@ nav {
   letter-spacing: 2px;
   padding: 25px;
   width: 100vw;
-  background: rgb(30, 144, 255);
+  background: rgb(51,106,133);
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -61,7 +62,8 @@ section {
 
 h1 {
   letter-spacing: 1px;
-  font-size: 2rem;
+  font-size: 100px;
+  font-family: Montserrat;
 }
 
 #tybelgium {
