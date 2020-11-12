@@ -74,6 +74,15 @@ h1 {
   font-family: Montserrat;
 }
 
+#mainName {
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+#mainName:hover {
+  color: rgb(99,56,54);
+}
+
 #info a{
   font-size: 100px;
   text-decoration: none;
