@@ -13,7 +13,6 @@ html {
 body {
   margin: 0;
   background: rgb(255, 255, 255);
-  font-family: 'Hind Siliguri', 'IBM Plex', sans-serif;
   color: rgb(66, 66, 66);
 }
 
@@ -83,15 +82,15 @@ h1 {
   color: rgb(99,56,54);
 }
 
-#info a{
+#info a {
   font-size: 100px;
   text-decoration: none;
   margin: 40px;
 }
 
-.socialMediaIcons {
-  width: 26px;
-  height: 26px;
+.fab {
+  font-size: 100px;
+  margin-right: 20px;
 }
 
 .sectionLinks {
