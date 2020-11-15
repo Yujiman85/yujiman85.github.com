@@ -32,8 +32,17 @@
 
   <!-- Info Section, contains About Me and Resume -->
   <section id="info">
-    <a href="" id="about">About Me</a>
-    <a href="" id="resume">Resume</a>
+    <a href="#myModal" id="about" onclick="openModal(id)">About Me</a>
+    <a href="#myModal" id="resume" onclick="openModal(id)">Resume</a>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalContent"></p>
+      </div>
+    </div>
   </section>
 
   <!-- Project Section -->
@@ -142,5 +151,7 @@
           <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/landingpagedemo" target="_blank">Source</a><br>
         </div>
       </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
