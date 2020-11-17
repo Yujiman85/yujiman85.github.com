@@ -17,6 +17,19 @@
 </head>
 
 <body>
+  <!-- The Modal for the Info Section -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 id="modalHeadline"></h2>
+      </div>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
   <!-- Navigation -->
   <nav id="nav">
     <a href="#home">Home</a>
@@ -34,15 +47,6 @@
   <section id="info">
     <a href="#myModal" id="about" onclick="openModal(id)">About Me</a>
     <a href="#myModal" id="resume" onclick="openModal(id)">Resume</a>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p id="modalContent"></p>
-      </div>
-    </div>
   </section>
 
   <!-- Project Section -->
@@ -50,7 +54,7 @@
 
   </section>
 
-  <!-- Social Media Links -->
+  <!-- Social Media Section -->
   <section id="socialMediaIcons">
     <div class="socialIcons">
       <a href="https://www.facebook.com/Ty-Yuji/" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -58,99 +62,6 @@
       <a href="https://github.com/Yujiman85" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </section>
-    
-    <!-- Beginning of Projects section -->
-    <div class="projectsHeader">Projects(9)</div>
-      <div class="projectsContainer">
-        <!-- Project -->
-        <div class="projectPic"><a href="http://www.ty-jenkins.com/light-dark-mode/" target="_blank"><img src="./images/lightdarkcombined.jpg"></a></div>
-        <div class="projectDesc"><strong>Light Mode/Dark Mode</strong><p>A demo website showcasing a light mode and dark mode using a combination of CSS and Javascript. Also saves which mode was active when the user leaves the site.</em></p>
-        </div>
-        <div class="projectLinks">
-          <a class="projectlink" href="http://www.ty-jenkins.com/light-dark-mode/" target="_blank">App Demo</a><br>
-          <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/light-dark-mode" target="_blank">Source</a><br />
-        </div>
-        <!-- Project -->
-        <div class="projectPic"><a href="https://streamable.com/wgd2ok" target="_blank"><img src="./images/infinitescroll.jpg"></a></div>
-        <div class="projectDesc"><strong>Infinite Scroll</strong><p>Pulls random photos from the Unsplash API and displays them vertically on the page. A new group of images will load every time the user nears the bottom of the window<br /> <em>(App Demo links to a video of the site in action since I couldn't keep my API key public on the repository)</em></p>
-        </div>
-        <div class="projectLinks">
-          <a class="projectlink" href="https://streamable.com/wgd2ok" target="_blank">App Demo</a><br>
-          <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/infinite-scroll" target="_blank">Source</a><br />
-        </div>
-        <!-- Project -->
-        <div class="projectPic"><a href="http://www.ty-jenkins.com/quotegenerator/" target="_blank"><img src="./images/quotegenerator.jpg"></a></div>
-        <div class="projectDesc"><strong>Quote Generator</strong><p>Pulls random quotes from an API and displays it on the page. The user can generate a new quote by pressing the button. The user can also tweet the current quote.</p>
-        </div>
-        <div class="projectLinks">
-          <a class="projectlink" href="http://www.ty-jenkins.com/quotegenerator/" target="_blank">App Demo</a><br>
-          <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/quotegenerator" target="_blank">Source</a><br />
-        </div>
-        <!-- Project -->
-        <div class="projectPic"><a href="https://ty-smart-brain.herokuapp.com/" target="_blank"><img src="./images/smartbrain.jpg"></a></div>
-        <div class="projectDesc"><strong>Face Image Recognition App</strong><p>An app created using React. It takes an image uploaded by the user and detects
-        whether there is a face present. If so, the app will put a bounding box around the
-        face. The app can also detect multiple faces and will display the appropriate
-        amount of bounding boxes.</p>
-        </div>
-        <div class="projectLinks">
-          <a class="projectlink" href="https://ty-smart-brain.herokuapp.com/" target="_blank">App Demo</a><br>
-          <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/Smart-Brain-Frontend" target="_blank">Front End Source</a><br />
-          <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/smart-brain-api" target="_blank">Back End Source</a>
-        </div>
-        <!-- Project -->
-        <div class="projectPic"><a href="https://weddingrsvpdemo.herokuapp.com/" target="_blank"><img src="./images/weddingrsvp.jpg"></a></div>
-        <div class="projectDesc"><strong>Wedding RSVP</strong><p>The user will enter their name and email address into a form, they will then
-        confirm the info, lastly that info will be entered into a database to create a list of
-        people attending. Afterwards an email will be sent to them confirming the RSVP.</p>
-      </div>
-        <div class="projectLinks">
-          <a class="projectlink" href="https://weddingrsvpdemo.herokuapp.com/" target="_blank">App Demo</a><br />
-          <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/weddingrsvpdemo" target="_blank">Source</a><br />
-        </div>
-        <!-- Project -->
-        <div class="projectPic"><a href="https://robofriends-reactapp.herokuapp.com/" target="_blank"><img src="./images/robofriends.jpg""></a>
-        </div>
-        <div class="projectDesc">
-          <strong> Robofriends React App</strong>
-          <p>
-            A react app that fetches JSON objects (the robots) and displays their picture and
-            name on cards. The app uses state to actively search through the objects when
-            the user is typing a name into the search bar.
-          </p>
-        </div>
-        <div class="projectLinks">
-        <a class="projectlink" href="https://robofriends-reactapp.herokuapp.com/" target="_blank">App Demo</a><br />
-        <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/robofriends" target="_blank">Source</a>
-        </div>
-        <!-- Project -->
-        <div class="projectPic"><a href="https://yujiman85.github.io/todolist/" target="_blank"><img src="./images/todoList.jpg"></a></div>
-        <div class="projectDesc"><strong>To-Do List Web App</strong><p>A todo list web app. Allows the user to add tasks to the list, the tasks are
-        separated by whether they are completed or not.</p>
-        </div>
-        <div class="projectLinks">
-          <a class="projectlink" href="https://yujiman85.github.io/todolist/" target="_blank">App Demo</a><br>
-          <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/todolist" target="_blank">Source</a><br>
-        </div>
-        <!-- Project -->
-        <div class="projectPic"><a href="https://yujiman85.github.io/background-generator/" target="_blank"><img src="./images/colorgen.jpg"></a></div>
-        <div class="projectDesc"><strong>Background Color Generator</strong><p>A single HTML page with a button that generates two random colors, then sets
-        the first and second color as the background gradient from left to right,
-        respectively.</p>
-        </div>
-        <div class="projectLinks">
-          <a class="projectlink" href="https://yujiman85.github.io/background-generator/" target="_blank">App Demo</a><br>
-          <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/background-generator" target="_blank">Source</a><br>
-        </div>
-        <!-- Project -->
-        <div class="projectPic"><a href="https://yujiman85.github.io/landingpagedemo/" target="_blank"><img src="./images/landingpage.jpg"></a></div>
-        <div class="projectDesc"><strong>Landing Page Demo</strong><p>A simple example of a landing page.</p>
-        </div>
-        <div class="projectLinks">
-          <a class="projectlink" href="https://yujiman85.github.io/landingpagedemo/" target="_blank">App Demo</a><br>
-          <a class="projectlink" style="font-size: 0.8em;" href="https://github.com/Yujiman85/landingpagedemo" target="_blank">Source</a><br>
-        </div>
-      </div>
 
   <script src="script.js"></script>
 </body>
