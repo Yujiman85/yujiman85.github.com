@@ -79,8 +79,20 @@ h1 {
   transition: color 1s;
 }
 
+#mainName + div {
+  opacity:0;  
+  -webkit-transition : all 1s ease-out;
+  -moz-transition : all 1s ease-out;
+  -o-transition : all 1s ease-out;
+  transition : all 1s ease-out;
+}
+
 #mainName:hover {
-  color: rgb(99,56,54);
+  color: #336a85;
+}
+
+#mainName:hover + div {
+  opacity: 1;
 }
 
 #info a {
@@ -133,11 +145,11 @@ h1 {
 }
 
 #modalContent {
-  font-family: Roboto, sans-serif;
+  font-family: Cardo, sans-serif;
   padding: 2px 16px;
   max-height: 70vh;
   overflow-y: auto;
-  color:  rgba(255, 255, 255, 0.7);
+  color:  rgba(255, 255, 255, 0.8);
 }
 
 /* The Close Button */
