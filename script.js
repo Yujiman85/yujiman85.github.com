@@ -9,18 +9,26 @@ const span = document.querySelector('.close');
 //Get the <a> element that opens the modal
 const about = document.querySelector('#about');
 
-//
+//Grab the modal header element
 const headline = document.querySelector('#modalHeadline');
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
-  document.querySelector("body").style.overflow = 'visible'; //Makes the main page scrollable again upon closing modal
+    modal.style.display = "none";
+    document.querySelector("body").style.overflow = 'visible'; //Makes the main page scrollable again upon closing modal
 };
 
-//Function to change content of modal depending on the link clicked
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+//Changes the content of modal depending on the link clicked
 function openModal(id) {
     const content = document.querySelector('#modalContent');
+
     if (id === 'about') {
         document.querySelector("body").style.overflow = 'hidden';
         headline.innerText = 'About Me';
@@ -33,7 +41,7 @@ function openModal(id) {
         content.innerHTML = resumeContent;
         modal.style.display = 'block';
     }
-};
+}
 
 //Content for About Me
 let aboutMeImage = `<img src="/images/tybelgium.jpg" class="bioPic" title="That's me in Belgium!" />`
