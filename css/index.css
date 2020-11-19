@@ -107,7 +107,7 @@ h1 {
 /* Modal Header */
 .modal-header {
   padding: 1px 16px;
-  background-color: rgb(51,106,133);
+  background: rgb(0 0 0 / 70%);
   color: white;
 }
 
@@ -115,7 +115,7 @@ h1 {
 .modal-content {
   overflow-y: hidden;
   position: relative;
-  background-color: #fefefe;
+  background: url('/images/memphis-mini-dark.png') repeat;
   margin: auto;
   padding: 0px;
   border: 1px solid #888;
@@ -137,7 +137,7 @@ h1 {
   padding: 2px 16px;
   max-height: 70vh;
   overflow-y: auto;
-  color: rgb(50, 50, 50);
+  color:  rgba(255, 255, 255, 0.7);
 }
 
 /* The Close Button */
