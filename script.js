@@ -52,4 +52,5 @@ As I got older my interests started to turn more towards computers and how they 
 I currently work with children but ultimately I want to work in tech. I want to make websites and design apps that can be useful for a wide range of people. My dream is to be part of a company/team that communicates and delegates well. For a year and half starting at the beginning of 2018 I diligently studied and refreshed my knowledge in Javascript and HTML. I added a course in React and Node so that I could learn how to utilize new technologies in a field that is always expanding. I really do love technology and its applications and I hope that I can have a long and successful career creating and utilizing what I love.`;
 
 //Content for Resume
-let resumeContent = `<embed type="text/html" src="Ty-Jenkins-Resume.html" style="background-color: whitesmoke; min-height:60vh; border-radius: 3px; width:100%">`;
+let resumeContent = `<embed type="text/html" src="Ty-Jenkins-Resume.html" style="background-color: #d3d3d3; min-height:60vh; border-radius: 3px; width:100%">`;
+

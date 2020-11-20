@@ -178,6 +178,52 @@ h1 {
   padding: 0 5px 0 0;
 }
 
+.projectsContainer {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  border: #336a85 1px solid;
+}
+
+.singleProject {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middleLayer {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.singleProject:hover .image {
+  opacity: 0.4;
+}
+
+.singleProject:hover .middleLayer {
+  opacity: 1;
+}
+
+.hvrText {
+  color: white;
+  font-size: 10px;
+}
+
+
+
 @media screen and (max-width: 630px) {
   #topname {
     font-size: 2.0rem;
@@ -196,7 +242,7 @@ h1 {
     font-size: 1.3em;
   }
 
-  .projectsContainer {
+  /* .projectsContainer {
   max-width: 100%;
   display: grid;
   grid-template-columns: 100%;
@@ -205,7 +251,7 @@ h1 {
   padding: 0 15px 0 15px;
   margin-left: auto;
   margin-right: auto;
-  }
+  } */
 
   .projectLinks {
     margin-bottom: 8px;
