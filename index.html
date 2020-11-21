@@ -30,6 +30,18 @@
     </div>
   </div>
 
+  <div id="projectModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 id="modalHeadline"></h2>
+      </div>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
   <!-- Navigation -->
   <nav id="nav">
     <a href="#home">Home</a>
@@ -55,13 +67,26 @@
     <div class="projectsContainer">
       <!-- Wedding RSVP Project -->
       <div class="singleProject">
-        <img src="/images/weddingrsvp.jpg" id="0" class="image"  onclick="openProject(id)" />
-        <div class="middleLayer">
-          <div class="hvrText">The user will enter their name and email address into a form, they will then
-            confirm the info, lastly that info will be entered into a database to create a list of
-            people attending. Afterwards an email will be sent to them confirming the RSVP.
+        <img src="/images/weddingrsvp.jpg" class="image" />
+        <a href="#projectModal" id="0" class="projLink" onclick="openProjectModal(id)">
+          <div class="middleLayer">
+            <div class="hvrText">The user will enter their name and email address into a form, they will then
+              confirm the info, lastly that info will be entered into a database to create a list of
+              people attending. Afterwards an email will be sent to them confirming the RSVP.
+            </div>
           </div>
-        </div>
+        </a>
+      </div>
+
+      <!-- Light/Dark Project -->
+      <div class="singleProject">
+        <img src="/images/lightdarkcombined.jpg" class="image" />
+        <a href="#projectModal" id="1" onclick="openProjectModal(id)">
+          <div class="middleLayer">
+            <div class="hvrText">A demo website showcasing a light mode and dark mode using a combination of CSS and Javascript. Also saves which mode was active when the user leaves the site.
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </section>
