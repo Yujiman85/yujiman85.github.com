@@ -16,5 +16,23 @@
         "img": "infinitescroll.jpg",
         "link": "https://streamable.com/wgd2ok",
         "source": "https://github.com/Yujiman85/infinite-scroll"
+    },
+    {
+        "name": "Quote Generator",
+        "img": "quotegenerator.jpg",
+        "link": "http://www.ty-jenkins.com/quotegenerator/",
+        "source": "https://github.com/Yujiman85/quotegenerator"
+    },
+    {
+        "name": "Smart Brain Face Image Recognizer",
+        "img": "smartbrain.jpg",
+        "link": "https://ty-smart-brain.herokuapp.com/",
+        "source": "https://github.com/Yujiman85/Smart-Brain-Frontend"
+    },
+    {
+        "name": "Robo Friends",
+        "img": "robofriends.jpg",
+        "link": "https://robofriends-reactapp.herokuapp.com/",
+        "source": "https://github.com/Yujiman85/robofriends"
     }
 ]
