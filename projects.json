@@ -10,5 +10,11 @@
         "img": "lightdarkcombined.jpg",
         "link": "http://www.ty-jenkins.com/light-dark-mode/",
         "source": "https://github.com/Yujiman85/light-dark-mode"
+    },
+    {
+        "name": "Infinite Scroll",
+        "img": "infinitescroll.jpg",
+        "link": "https://streamable.com/wgd2ok",
+        "source": "https://github.com/Yujiman85/infinite-scroll"
     }
 ]

@@ -15,6 +15,7 @@ const headline = document.querySelector('#modalHeadline');
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+    document.querySelector(".modal-content").style.textAlign = "left";
     document.querySelector("body").style.overflow = 'visible'; //Makes the main page scrollable again upon closing modal
 };
 
@@ -22,6 +23,7 @@ span.onclick = function() {
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        document.querySelector(".modal-content").style.textAlign = "left";
     }
 }
 
@@ -64,9 +66,9 @@ async function openProjectModal(id) {
         let projects = await response.json();
 
         headline.innerText = projects[id].name;
-        let img = `<img src="./images/${projects[id].img}" style="width: 50%; border-radius: 5px;" />`;
-        let demo = `<a href="${projects[id].link}"><h2>Project Demo</h2></a>`;
-        let source = `<a href="${projects[id].source}"><h2>Source Code</h2></a>`;
+        let img = `<img src="./images/${projects[id].img}" style="width: 50%; border-radius: 5px;" /><br><br>`; //Grabs the project image
+        let demo = `<a href="${projects[id].link}" target="_blank">Project Demo</a><br><br>`; // Grabs the project demo link
+        let source = `<a href="${projects[id].source}" target="_blank">Source Code</a><br><br>`; // Grabs the project source link
         content.innerHTML = img + demo + source;
         document.querySelector("body").style.overflow = 'hidden';
         modal.style.display = 'block';
