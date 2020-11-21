@@ -46,12 +46,14 @@
 
   <!-- Info Section, contains About Me and Resume -->
   <section id="info">
+    <h2>Information</h2>
     <a href="#myModal" id="about" onclick="openModal(id)">About Me</a>
     <a href="#myModal" id="resume" onclick="openModal(id)">Resume</a>
   </section>
 
   <!-- Project Section -->
   <section id="projects">
+    <h2>Programming Projects</h2>
     <div class="projectsContainer">
 
       <!-- Wedding RSVP Project -->
@@ -88,12 +90,52 @@
           </div>
         </a>
       </div>
+
+      <!-- Quote Generator Project -->
+      <div class="singleProject">
+        <img src="/images/quotegenerator.jpg" class="image" />
+        <a href="#myModal" id="3" class="projLink" onclick="openProjectModal(id)">
+          <div class="middleLayer">
+            <div class="hvrText">Pulls random quotes from an API and displays it on the page. The user can generate a new quote by pressing the button. The user can also tweet the current quote.
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Smart Brain Project -->
+      <div class="singleProject">
+        <img src="/images/smartbrain.jpg" class="image" />
+        <a href="#myModal" id="4" class="projLink" onclick="openProjectModal(id)">
+          <div class="middleLayer">
+            <div class="hvrText">An app created using React. It takes an image uploaded by the user and detects
+              whether there is a face present. If so, the app will put a bounding box around the
+              face. The app can also detect multiple faces and will display the appropriate
+              amount of bounding boxes.
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Robofriends Project -->
+      <div class="singleProject">
+        <img src="/images/robofriends.jpg" class="image" />
+        <a href="#myModal" id="5" class="projLink" onclick="openProjectModal(id)">
+          <div class="middleLayer">
+            <div class="hvrText">A react app that fetches JSON objects (the robots) and displays their picture and
+              name on cards. The app uses state to actively search through the objects when
+              the user is typing a name into the search bar.
+            </div>
+          </div>
+        </a>
+      </div>
+
     </div>
   </div>
   </section>
 
   <!-- Social Media Section -->
   <section id="socialMediaIcons">
+    <h2>Social Media</h2>
     <div class="socialIcons">
       <a href="https://www.facebook.com/Ty-Yuji/" target="_blank"><i class="fab fa-facebook-square"></i></a>
       <a href="https://www.instagram.com/spacemanci/" target="_blank"><i class="fab fa-instagram"></i></a>

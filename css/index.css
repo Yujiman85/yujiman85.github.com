@@ -76,6 +76,10 @@ h1 {
   font-family: Montserrat;
 }
 
+h2 {
+  letter-spacing: 2px;
+}
+
 #mainName {
   -webkit-transition: color 1s;
   transition: color 1s;
