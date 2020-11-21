@@ -56,6 +56,7 @@ nav a:hover {
 
 a {
   color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
 }
 
 a:hover {
@@ -151,6 +152,10 @@ h1 {
   max-height: 70vh;
   overflow-y: auto;
   color:  rgba(255, 255, 255, 0.8);
+}
+
+#modalContent a {
+  font-size: 2em;
 }
 
 /* The Close Button */
