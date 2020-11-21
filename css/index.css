@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Quicksand:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 html {
   box-sizing: border-box;
@@ -145,7 +146,7 @@ h1 {
 }
 
 #modalContent {
-  font-family: Cardo, sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   padding: 2px 16px;
   max-height: 70vh;
   overflow-y: auto;
@@ -182,20 +183,33 @@ h1 {
   width: 80%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  border: #336a85 1px solid;
+  /* border: #336a85 1px solid; */
 }
 
 .singleProject {
   position: relative;
+  padding: 5px;
 }
 
 .image {
   opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: .5s ease;
   backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.projLink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 5px;
 }
 
 .middleLayer {
@@ -210,7 +224,7 @@ h1 {
 }
 
 .singleProject:hover .image {
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 .singleProject:hover .middleLayer {
@@ -219,7 +233,9 @@ h1 {
 
 .hvrText {
   color: white;
-  font-size: 10px;
+  font-size: 16px;
+  font-family: "Roboto Condensed";
+  font-weight: lighter;
 }
 
 
