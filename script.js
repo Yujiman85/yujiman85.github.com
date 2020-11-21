@@ -54,3 +54,24 @@ I currently work with children but ultimately I want to work in tech. I want to 
 //Content for Resume
 let resumeContent = `<embed type="text/html" src="Ty-Jenkins-Resume.html" style="background-color: #d3d3d3; min-height:60vh; border-radius: 3px; width:100%">`;
 
+//Async function to open Modal for project section
+async function openProjectModal(id) {
+    const content = document.querySelector('#modalContent');
+    document.querySelector(".modal-content").style.textAlign = "center";
+
+    try {
+        let response = await fetch('projects.json');
+        let projects = await response.json();
+
+        headline.innerText = projects[id].name;
+        let img = `<img src="./images/${projects[id].img}" style="width: 50%; border-radius: 5px;" />`;
+        let demo = `<a href="${projects[id].link}"><h2>Project Demo</h2></a>`;
+        let source = `<a href="${projects[id].source}"><h2>Source Code</h2></a>`;
+        content.innerHTML = img + demo + source;
+        document.querySelector("body").style.overflow = 'hidden';
+        modal.style.display = 'block';
+
+    } catch(error) {
+        console.log(error);
+    }
+}

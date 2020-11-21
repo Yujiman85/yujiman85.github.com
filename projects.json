@@ -3,6 +3,12 @@
         "name": "Wedding RSVP",
         "img": "weddingrsvp.jpg",
         "link": "https://weddingrsvpdemo.herokuapp.com/",
-        "sourceCode": "https://github.com/Yujiman85/weddingrsvpdemo"
+        "source": "https://github.com/Yujiman85/weddingrsvpdemo"
+    },
+    {
+        "name": "Light/Dark Mode",
+        "img": "lightdarkcombined.jpg",
+        "link": "http://www.ty-jenkins.com/light-dark-mode/",
+        "source": "https://github.com/Yujiman85/light-dark-mode"
     }
 ]
