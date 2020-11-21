@@ -189,7 +189,7 @@ h2 {
 }
 
 .projectsContainer {
-  width: 80%;
+  width: 75%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   /* border: #336a85 1px solid; */
