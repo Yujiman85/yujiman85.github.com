@@ -274,4 +274,15 @@ h2 {
     padding: 2px 2px;
   }
 
+  #projects {
+    padding-top: 55px;
+  }
+
+  .projectsContainer {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 100%;
+    /* border: #336a85 1px solid; */
+  }
+
 }
