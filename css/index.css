@@ -25,7 +25,7 @@ nav {
   letter-spacing: 1px;
   padding: 25px;
   width: 100vw;
-  background: rgb(0 0 0 / 70%);
+  background: rgb(0 0 0 / 40%);
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -57,6 +57,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 h1 {
@@ -66,6 +67,7 @@ h1 {
 
 h2 {
   letter-spacing: 2px;
+  padding-top: 75px;
 }
 
 #mainName {
@@ -113,7 +115,7 @@ h2 {
 /* Modal Header */
 .modal-header {
   padding: 1px 16px;
-  background: rgb(0 0 0 / 70%);
+  background: rgb(0 0 0 / 40%);
   color: white;
 }
 
@@ -140,7 +142,7 @@ h2 {
 
 #modalContent {
   font-family: "Roboto Condensed", sans-serif;
-  padding: 2px 16px;
+  padding: 7px 16px;
   max-height: 70vh;
   overflow-y: auto;
   color:  rgba(255, 255, 255, 0.8);

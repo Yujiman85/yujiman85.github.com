@@ -33,12 +33,16 @@ function openModal(id) {
 
     if (id === 'about') {
         document.querySelector("body").style.overflow = 'hidden';
+        document.querySelector('h2').style.paddingTop = 0;
+        document.querySelector(".modal-content").style.background = "url('/images/binding_dark.png')";
         headline.innerText = 'About Me';
         content.innerHTML = aboutMeImage + aboutMeContent;
         modal.style.display = 'block';
     }
     if (id === 'resume') {
         document.querySelector("body").style.overflow = 'hidden';
+        document.querySelector('h2').style.paddingTop = 0;
+        document.querySelector(".modal-content").style.background = "url('/images/binding_dark.png')";
         headline.innerText = 'Resume';
         content.innerHTML = resumeContent;
         modal.style.display = 'block';
@@ -60,6 +64,8 @@ let resumeContent = `<embed type="text/html" src="Ty-Jenkins-Resume.html" style=
 async function openProjectModal(id) {
     const content = document.querySelector('#modalContent');
     document.querySelector(".modal-content").style.textAlign = "center";
+    document.querySelector('h2').style.paddingTop = 0;
+    document.querySelector(".modal-content").style.background = "url('/images/memphis-mini-dark.png')";
 
     try {
         let response = await fetch('projects.json');
