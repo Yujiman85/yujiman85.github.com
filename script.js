@@ -72,7 +72,7 @@ async function openProjectModal(id) {
         let projects = await response.json();
 
         headline.innerText = projects[id].name;
-        let img = `<img src="./images/${projects[id].img}" style="width: 50%; border-radius: 5px;" /><br><br>`; //Grabs the project image
+        let img = `<img src="./images/${projects[id].img}" class="modalProjectImage" /><br><br>`; //Grabs the project image
         let demo = `<a href="${projects[id].link}" target="_blank">Project Demo</a><br><br>`; // Grabs the project demo link
         let source = `<a href="${projects[id].source}" target="_blank">Source Code</a><br><br>`; // Grabs the project source link
         content.innerHTML = img + demo + source;
