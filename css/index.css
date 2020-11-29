@@ -169,7 +169,7 @@ h2 {
 
 .fab {
   font-size: 100px;
-  margin-right: 20px;
+  padding: 0 10px;
 }
 
 .bioPic {
@@ -237,6 +237,11 @@ h2 {
   font-weight: lighter;
 }
 
+.modalProjectImage {
+  width: 50%;
+  border-radius: 5px;
+}
+
 
 
 @media only screen and (max-width: 480px) {
@@ -256,6 +261,10 @@ h2 {
     font-size: 50px;
   }
 
+  h2 {
+    padding-top: 25px;
+  }
+
   #info a {
     font-size: 50px;
     text-decoration: none;
@@ -272,7 +281,7 @@ h2 {
   }
 
   #modalContent {
-    padding: 2px 2px;
+    padding: 2px 7px;
   }
 
   #projects {
@@ -284,6 +293,10 @@ h2 {
     display: grid;
     grid-template-columns: 100%;
     /* border: #336a85 1px solid; */
+  }
+
+  .modalProjectImage {
+    width: 85%;
   }
 
 }
