@@ -248,7 +248,7 @@ h2 {
   nav {
     z-index: 10;
     position: fixed;
-    font-size: 20px;
+    font-size: 18px;
     background: rgb(0 0 0 / 70%);
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
   }
