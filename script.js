@@ -24,6 +24,7 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
         document.querySelector(".modal-content").style.textAlign = "left";
+        document.querySelector("body").style.overflow = 'visible';
     }
 }
 
