@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Quicksand:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
@@ -17,7 +14,7 @@ body {
   color:  rgba(255, 255, 255, 0.7);
 }
 
-nav {
+#nav {
   z-index: 10;
   position: fixed;
   font-size: 28px;
@@ -29,14 +26,14 @@ nav {
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
 }
 
-nav a {
+#nav a {
   color: white;
   text-decoration: none;
   margin-right: 20px;
   letter-spacing: 2px;
 }
 
-nav a:hover {
+#nav a:hover {
   color: white;
   border-bottom: 3px solid;
 }
@@ -245,15 +242,14 @@ h2 {
 
 
 @media only screen and (max-width: 480px) {
-  nav {
+  #nav {
     z-index: 10;
-    position: fixed;
     font-size: 18px;
     background: rgb(0 0 0 / 70%);
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
   }
 
-  nav a {
+  #nav a {
     margin-right: 10px;
   }
 
@@ -293,6 +289,10 @@ h2 {
     display: grid;
     grid-template-columns: 100%;
     /* border: #336a85 1px solid; */
+  }
+
+  .singleProject {
+    margin-bottom: 15px;
   }
 
   .modalProjectImage {
