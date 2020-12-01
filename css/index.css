@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 html {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   scroll-behavior: smooth;
 }
 
@@ -14,26 +14,29 @@ body {
   color:  rgba(255, 255, 255, 0.7);
 }
 
-#nav {
+nav {
   z-index: 10;
   position: fixed;
   font-size: 28px;
   font-family: Oswald, sans-serif;
   letter-spacing: 1px;
-  padding: 25px;
-  width: 100vw;
+  width: 100%;
   background: rgb(0 0 0 / 40%);
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
 }
 
-#nav a {
+nav div {
+  padding: 25px;
+}
+
+nav a {
   color: white;
   text-decoration: none;
   margin-right: 20px;
   letter-spacing: 2px;
 }
 
-#nav a:hover {
+nav a:hover {
   color: white;
   border-bottom: 3px solid;
 }
@@ -242,14 +245,18 @@ h2 {
 
 
 @media only screen and (max-width: 480px) {
-  #nav {
+  nav {
     z-index: 10;
     font-size: 18px;
-    background: rgb(0 0 0 / 70%);
+    /* background: rgb(0 0 0 / 70%); */
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
   }
 
-  #nav a {
+  nav div {
+    text-align: center;
+  }
+
+  nav a {
     margin-right: 10px;
   }
 
