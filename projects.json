@@ -40,5 +40,11 @@
         "img": "todoList.jpg",
         "link": "http://ty-jenkins.com/todolist/",
         "source": "https://github.com/Yujiman85/todolist"
+    },
+    {
+        "name": "Background Color Generator",
+        "img": "colorgen.jpg",
+        "link": "http://www.ty-jenkins.com/background-generator/",
+        "source": "https://github.com/Yujiman85/background-generator"
     }
 ]
