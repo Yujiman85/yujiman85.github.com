@@ -46,5 +46,11 @@
         "img": "colorgen.jpg",
         "link": "http://www.ty-jenkins.com/background-generator/",
         "source": "https://github.com/Yujiman85/background-generator"
+    },
+    {
+        "name": "Landing Page",
+        "img": "landingpage.jpg",
+        "link": "http://www.ty-jenkins.com/landingpagedemo/",
+        "source": "https://github.com/Yujiman85/landingpagedemo"
     }
 ]
