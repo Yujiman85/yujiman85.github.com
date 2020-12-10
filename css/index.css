@@ -242,6 +242,12 @@ h2 {
   border-radius: 5px;
 }
 
+.modalProjectDescrip {
+  margin: auto;
+  width: 75%;
+  padding-bottom: 10px;
+}
+
 
 
 @media only screen and (max-width: 480px) {
