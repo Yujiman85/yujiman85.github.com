@@ -4,7 +4,7 @@
         "img": "weddingrsvp.jpg",
         "link": "https://weddingrsvpdemo.herokuapp.com/",
         "source": "https://github.com/Yujiman85/weddingrsvpdemo",
-        "description": "The user will enter their name and email address into a form, they will then\nconfirm the info, lastly that\ninfo will be entered into a database to create a list of\npeople attending. Afterwards an email will be sent to them confirming the RSVP."
+        "description": "The user will enter their name and email address into a form, they will then confirm the info, lastly that info will be entered into a database to create a list of\npeople attending. Afterwards an email will be sent to them confirming the RSVP."
     },
     {
         "name": "Light/Dark Mode",
@@ -17,19 +17,22 @@
         "name": "Infinite Scroll",
         "img": "infinitescroll.jpg",
         "link": "https://streamable.com/wgd2ok",
-        "source": "https://github.com/Yujiman85/infinite-scroll"
+        "source": "https://github.com/Yujiman85/infinite-scroll",
+        "description": "Pulls random photos from the Unsplash API and displays them vertically on the page. A new group of images will load every time the user nears the bottom of the window<br> <em>(App Demo links to a video of the project since the API key couldn't be public.)</em>"
     },
     {
         "name": "Quote Generator",
         "img": "quotegenerator.jpg",
         "link": "http://www.ty-jenkins.com/quotegenerator/",
-        "source": "https://github.com/Yujiman85/quotegenerator"
+        "source": "https://github.com/Yujiman85/quotegenerator",
+        "description": "Pulls random quotes from an API and displays it on the page. The user can generate a new quote by pressing the button. The user can also tweet the current quote."
     },
     {
         "name": "Smart Brain Face Image Recognizer",
         "img": "smartbrain.jpg",
         "link": "https://ty-smart-brain.herokuapp.com/",
-        "source": "https://github.com/Yujiman85/Smart-Brain-Frontend"
+        "source": "https://github.com/Yujiman85/Smart-Brain-Frontend",
+        "description": "A React app that takes an image uploaded by the user and detects whether there is a face present and put bounding box around the it. The app can also detect multiple faces and will display the appropriate amount of bounding boxes."
     },
     {
         "name": "Robo Friends",

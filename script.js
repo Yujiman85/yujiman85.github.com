@@ -77,7 +77,7 @@ async function openProjectModal(id) {
         let descrip = `<div class="modalProjectDescrip">${projects[id].description}</div>`; //Grabs the project description
         let demo = `<a href="${projects[id].link}" target="_blank">Project Demo</a><br><br>`; // Grabs the project demo link
         let source = `<a href="${projects[id].source}" target="_blank">Source Code</a><br><br>`; // Grabs the project source link
-        content.innerHTML = img + descrip + demo + source;
+        content.innerHTML = img + descrip + demo + source; //Sets all the info for the modal
         document.querySelector("body").style.overflow = 'hidden';
         modal.style.display = 'block';
 
