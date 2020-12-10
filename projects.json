@@ -3,13 +3,15 @@
         "name": "Wedding RSVP",
         "img": "weddingrsvp.jpg",
         "link": "https://weddingrsvpdemo.herokuapp.com/",
-        "source": "https://github.com/Yujiman85/weddingrsvpdemo"
+        "source": "https://github.com/Yujiman85/weddingrsvpdemo",
+        "description": "The user will enter their name and email address into a form, they will then\nconfirm the info, lastly that\ninfo will be entered into a database to create a list of\npeople attending. Afterwards an email will be sent to them confirming the RSVP."
     },
     {
         "name": "Light/Dark Mode",
         "img": "lightdarkcombined.jpg",
         "link": "http://www.ty-jenkins.com/light-dark-mode/",
-        "source": "https://github.com/Yujiman85/light-dark-mode"
+        "source": "https://github.com/Yujiman85/light-dark-mode",
+        "description": "A demo website showcasing a light mode and dark mode using a combination of CSS and Javascript. Also saves which mode was active when the user leaves the site."
     },
     {
         "name": "Infinite Scroll",
