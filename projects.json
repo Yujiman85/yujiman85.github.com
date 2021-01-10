@@ -4,7 +4,7 @@
         "img": "weddingrsvp.jpg",
         "link": "https://weddingrsvpdemo.herokuapp.com/",
         "source": "https://github.com/Yujiman85/weddingrsvpdemo",
-        "description": "The user will enter their name and email address into a form, they will then confirm the info, lastly that info will be entered into a database to create a list of\npeople attending. Afterwards an email will be sent to them confirming the RSVP."
+        "description": "The user will enter their name and email address into a form, they will then confirm the info, lastly that info will be entered into a database to create a list of people attending. Afterwards an email will be sent to them confirming the RSVP."
     },
     {
         "name": "Light/Dark Mode",
