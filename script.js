@@ -16,7 +16,7 @@ const headline = document.querySelector('#modalHeadline');
 span.onclick = function() {
     modal.style.display = "none";
     document.querySelector(".modal-content").style.textAlign = "left";
-    document.querySelector("body").style.overflow = 'visible'; //Makes the main page scrollable again upon closing modal
+    document.querySelector("body").style.overflowY = 'visible'; //Makes the main page scrollable again upon closing modal
 };
 
 // When the user clicks anywhere outside of the modal, close it
@@ -24,7 +24,7 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
         document.querySelector(".modal-content").style.textAlign = "left";
-        document.querySelector("body").style.overflow = 'visible';
+        document.querySelector("body").style.overflowY = 'visible';
     }
 }
 
@@ -33,7 +33,7 @@ function openModal(id) {
     const content = document.querySelector('#modalContent');
 
     if (id === 'about') {
-        document.querySelector("body").style.overflow = 'hidden';
+        document.querySelector('body').style.overflow = 'hidden';
         document.querySelector('h2').style.paddingTop = 0;
         document.querySelector(".modal-content").style.background = "url('/images/binding_dark.png')";
         headline.innerText = 'About Me';
