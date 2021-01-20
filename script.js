@@ -16,7 +16,7 @@ const headline = document.querySelector('#modalHeadline');
 span.onclick = function() {
     modal.style.display = "none";
     document.querySelector(".modal-content").style.textAlign = "left";
-    document.querySelector("body").style.overflowY = 'visible'; //Makes the main page scrollable again upon closing modal
+    document.querySelector("html").style.overflowY = 'visible'; //Makes the main page scrollable again upon closing modal
 };
 
 // When the user clicks anywhere outside of the modal, close it
@@ -24,26 +24,23 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
         document.querySelector(".modal-content").style.textAlign = "left";
-        document.querySelector("body").style.overflowY = 'visible';
+        document.querySelector("html").style.overflowY = 'visible';
     }
 }
 
 //Changes the content of modal depending on the link clicked
 function openModal(id) {
     const content = document.querySelector('#modalContent');
+    document.querySelector("html").style.overflow = 'hidden';
+    document.querySelector('h2').style.paddingTop = 0;
+    document.querySelector(".modal-content").style.background = "url('/images/binding_dark.png')";
 
     if (id === 'about') {
-        document.querySelector('body').style.overflow = 'hidden';
-        document.querySelector('h2').style.paddingTop = 0;
-        document.querySelector(".modal-content").style.background = "url('/images/binding_dark.png')";
         headline.innerText = 'About Me';
         content.innerHTML = aboutMeImage + aboutMeContent;
         modal.style.display = 'block';
     }
     if (id === 'resume') {
-        document.querySelector("body").style.overflow = 'hidden';
-        document.querySelector('h2').style.paddingTop = 0;
-        document.querySelector(".modal-content").style.background = "url('/images/binding_dark.png')";
         headline.innerText = 'Resume';
         content.innerHTML = resumeContent;
         modal.style.display = 'block';
@@ -78,7 +75,7 @@ async function openProjectModal(id) {
         let demo = `<a href="${projects[id].link}" target="_blank">Project Demo</a><br><br>`; // Grabs the project demo link
         let source = `<a href="${projects[id].source}" target="_blank">Source Code</a><br><br>`; // Grabs the project source link
         content.innerHTML = img + descrip + demo + source; //Sets all the info for the modal
-        document.querySelector("body").style.overflow = 'hidden';
+        document.querySelector("html").style.overflow = 'hidden';
         modal.style.display = 'block';
 
     } catch(error) {
