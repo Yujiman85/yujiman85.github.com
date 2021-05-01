@@ -2,12 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
-html {
+html, body {
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-body {
   overflow-x: hidden;
   font-family: Montserrat, sans-serif;
   margin: 0;
@@ -15,28 +12,37 @@ body {
   color:  rgba(255, 255, 255, 0.7);
 }
 
-nav {
+.navbar {
   z-index: 10;
   position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   font-size: 1.75rem;
-  /* font-family: Oswald, sans-serif; */
   width: 100%;
-  background: rgb(0 0 0 / 40%);
+  background: rgb(0 0 0 / 70%);
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
+  padding: 25px 0;
 }
 
-nav div {
-  padding: 25px;
+.navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-nav a {
+.nav-item {
+  list-style: none;
+}
+
+.nav-links a {
   color: white;
   text-decoration: none;
-  margin-right: 20px;
+  margin-left: 20px;
   letter-spacing: 1px;
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: white;
   border-bottom: 1px solid;
 }
@@ -259,23 +265,21 @@ h2 {
   transition: transform 400ms;
 }
 
+/* Media Queries */
 
-
-@media only screen and (max-width: 576px) {
-
-  nav {
-    z-index: 10;
-    font-size: 1rem;
-    /* background: rgb(0 0 0 / 70%); */
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
+@media (max-width: 576px) {
+  .navbar {
+    justify-content: center;
   }
 
-  nav div {
-    text-align: center;
+  .nav-links {
+    padding: 0 15px;
+    margin-left: 0;
   }
 
-  nav a {
-    margin-right: 10px;
+  .nav-links a {
+    margin: 0 7px;
+    font-size: 1.5rem;
   }
 
   h1 {
@@ -313,7 +317,6 @@ h2 {
     width: 95%;
     display: grid;
     grid-template-columns: 100%;
-    /* border: #336a85 1px solid; */
   }
 
   .singleProject {
@@ -323,5 +326,31 @@ h2 {
   .modalProjectImage {
     width: 85%;
   }
+}
 
+@media (max-width: 411px) {
+  .nav-links a {
+    margin: 0 7px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .navbar {
+    padding: 15px 0;
+  }
+
+  .nav-links a {
+    font-size: .7rem;
+  }
+
+  #info a {
+    font-size: 36px;
+    text-decoration: none;
+    margin: 40px;
+  }
+
+  .fab {
+    font-size: 50px;
+  }
 }
