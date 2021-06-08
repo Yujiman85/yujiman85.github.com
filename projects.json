@@ -68,5 +68,12 @@
         "link": "http://www.ty-jenkins.com/landingpagedemo/",
         "source": "https://github.com/Yujiman85/landingpagedemo",
         "description": "A simple example of a landing page."
+    },
+    {
+        "name": "React E-Commerce Demo",
+        "img": "crwnclothing.jpg",
+        "link": "https://crwn-clothing-tyjenkins.herokuapp.com/",
+        "source": "https://github.com/Yujiman85/ty-crwn-clothing",
+        "description": "A React e-commerce site that allows a user to sign in with email or Google authentication. The user can add items to their cart, in multiple quantities if they choose. A checkout page shows all the items in the cart, the user can increase or decrease the quantity and the price will update dynamically. Future Stripe implementation will be able to mimic card payments."
     }
 ]
