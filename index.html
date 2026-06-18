@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="light">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta http-equiv="Cache-control" content="NO-CACHE">
 
   <!-- Primary Meta Tags -->
   <title>Ty Jenkins | Web Developer</title>
   <meta name="title" content="Ty Jenkins">
   <meta name="description" content="The home of Ty Jenkins, Web Developer. Welcome!">
+  <meta name="theme-color" content="#3d5a80">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -24,8 +25,23 @@
   <meta property="twitter:description" content="Welcome! I am Ty, a web developer.">
   <meta property="twitter:image" content="./images/metaimage.png">
 
+  <!-- Set the theme before paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = saved
+          || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { /* default light from the markup */ }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
   <!-- Favicon links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -34,178 +50,119 @@
 </head>
 
 <body>
-  <!-- The Modal for the Info Section -->
-  <div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <span class="close">&times;</span>
-        <h2 id="modalHeadline"></h2>
-      </div>
-      <div id="modalContent"></div>
-    </div>
-  </div>
-
   <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-links">
+  <header class="navbar" id="navbar">
+    <a href="#home" class="brand">Ty<span>Jenkins</span></a>
+
+    <nav class="nav-links" aria-label="Primary">
       <ul>
-        <li class="nav-item"><a href="#home">Home</a></li>
-        <li class="nav-item"><a href="#info">Info</a></li>
-        <li class="nav-item"><a href="#projects">Projects</a></li>
-        <li class="nav-item"><a href="#socialMediaIcons">Social</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Home Section -->
-  <section id="home" style="background: url('/images/memphis-mini-dark.png') repeat;">
-    <h1 id="mainName">Ty Jenkins</h1>
-    <div>Hello Visitor.</div>
+    <button id="themeToggle" class="theme-toggle" type="button"
+            aria-label="Switch color theme" title="Switch color theme">
+      <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <!-- Home / Hero -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <p class="hero-kicker">Hello, visitor 👋</p>
+      <h1 class="hero-title">Ty Jenkins</h1>
+      <p class="hero-subtitle">Web developer based in Philadelphia, building clean,
+        useful things for the web.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="./files/Ty-Jenkins-Resume-Updated.pdf" target="_blank" rel="noopener"
+           class="btn btn-ghost">My résumé</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to about">
+      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+    </a>
   </section>
 
-  <!-- Info Section, contains About Me and Resume -->
-  <section id="info" style="background: url('/images/binding_dark.png') repeat;">
-    <div class="about-container">
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="section-head">
+      <span class="eyebrow">Info</span>
       <h2>About Me</h2>
-      <img src="/images/tybelgium.jpg" class="bioPic" title="That's me in Belgium!" />
-      <p class="bio-text">
-        My love of technology started when I was 5 years old and my parents bought my siblings and I an NES for Christmas. The first game I ever played was Super Mario Bros. and the second the first level started up I fell in love. I played level after level and even as the difficulty increased I became even more determined to finish the game. It became almost a tradition for my siblings to watch me play the games. Video games are a big part of my life and I have a lot of memories playing so many of them throughout the years. I even dabbled in game design a little bit in my teenage years. I designed my own Role Playing Game using a program called RPG Maker. My game had it's own title screen, characters, opening intro, and storyline that I all came up with myself. I lost that game a long time ago but part of me wishes I could fire it back up and relive the memories of putting it all together.<br><br>
-
-        As I got older my interests started to turn more towards computers and how they operated. At first my curiosity about them was mostly surface-level: Processor speed, hard drive space, monitor resolution, etc. This is what led me to major in Information Science and Technology(IST) while attending Penn State University. There my focus was on Integration and Application which mostly consisted of how best to provide end-users with a pleasant experience. In one particular group project we were tasked with designing a new healthcare website that users could use to identify their symptoms of whatever was afflicting them. Once all the symptoms were identified the website would give them a possible diagnosis and the next steps to take in remedying their situation. I took lead in designing the interface while my team members took care of the functionality. For other similar projects I was tasked with functionality.<br><br>
-
-        I currently live in Philadelphia and work with children but ultimately I want to work in tech. I want to make websites and design apps that can be useful for a wide range of people. My dream is to be part of a company/team that communicates and delegates well. For a year and half starting at the beginning of 2018 I diligently studied and refreshed my knowledge in Javascript and HTML. I added a course in React and Node so that I could learn how to utilize new technologies in a field that is always expanding. I really do love technology and its applications and I hope that I can have a long and successful career creating and utilizing what I love.
-      </p>
-      <a href="./files/Ty-Jenkins-Resume-Updated.pdf" target="_blank">My Resume</a>  
+    </div>
+    <div class="about-grid">
+      <div class="about-media">
+        <img src="/images/tybelgium.jpg" alt="Ty Jenkins in Belgium" class="bioPic" loading="lazy" />
+        <span class="about-caption">That's me in Belgium!</span>
+      </div>
+      <div class="about-body">
+        <p>My love of technology started when I was 5 and my parents bought my siblings
+          and me an NES for Christmas. The first game I ever played was Super Mario Bros.,
+          and the second that first level started up I fell in love. I even dabbled in game
+          design as a teenager, building my own RPG — title screen, characters, intro, and
+          storyline — using RPG Maker.</p>
+        <p>As I got older my curiosity turned toward computers and how they work. That led
+          me to major in Information Science and Technology (IST) at Penn State, focusing on
+          Integration and Application — how best to give end-users a pleasant experience. On
+          one group project we designed a healthcare website that helped users identify
+          their symptoms and get a possible diagnosis and next steps. I took the lead on the
+          interface design.</p>
+        <p>That path eventually led me into web development. Starting in 2018 I spent a
+          year and a half refreshing my JavaScript and HTML and adding React and Node —
+          building many of the projects you'll find below. Today I'm a developer at
+          Zivtech, a Philadelphia-based digital agency specializing in Drupal and open-source
+          web development, where I build and maintain client sites with PHP and MySQL. I
+          love that I get to spend my days creating things for the web that are genuinely
+          useful to a wide range of people.</p>
+        <div class="about-skills">
+          <span>JavaScript</span><span>React</span><span>Node.js</span>
+          <span>PHP</span><span>Drupal</span><span>MySQL</span>
+          <span>HTML &amp; CSS</span><span>Responsive Design</span><span>Accessibility</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Project Section -->
-  <section id="projects" style="background: url('/images/memphis-mini-dark.png') repeat;">
-    <h2>Projects</h2>
-    <div class="projectsContainer">
-
-      <!-- E-Commerce Demo -->
-      <div class="singleProject">
-        <img src="/images/crwnclothing.jpg" class="image" />
-        <a href="#myModal" id="10" class="projLink" onclick="openProjectModal(id)">
-          <div class="middleLayer">
-            <div class="hvrText">React E-Commerce Demo</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Bootstrap Demo -->
-      <div class="singleProject">
-        <img src="/images/bootstrapdemo.jpg" class="image" />
-        <a href="#myModal" id="0" class="projLink" onclick="openProjectModal(id)">
-          <div class="middleLayer">
-            <div class="hvrText">Bootstrap 5 Demo</div>
-          </div>
-        </a>
-      </div>
-      
-      <!-- Wedding RSVP Project -->
-      <div class="singleProject">
-        <img src="/images/weddingrsvp.jpg" class="image" />
-        <a href="#myModal" id="1" class="projLink" onclick="openProjectModal(id)">
-          <div class="middleLayer">
-            <div class="hvrText">Wedding RSVP</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Light/Dark Project -->
-      <div class="singleProject">
-        <img src="/images/lightdarkcombined.jpg" class="image" />
-        <a href="#myModal" id="2" class="projLink" onclick="openProjectModal(id)">
-          <div class="middleLayer">
-            <div class="hvrText">Light/Dark Theme Demonstration</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Infinite Scroll Project -->
-      <div class="singleProject">
-        <img src="/images/infinitescroll.jpg" class="image" />
-        <a href="#myModal" id="3" class="projLink" onclick="openProjectModal(id)">
-          <div class="middleLayer">
-            <div class="hvrText">Infinite Scroll</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Quote Generator Project -->
-      <div class="singleProject">
-        <img src="/images/quotegenerator.jpg" class="image" />
-        <a href="#myModal" id="4" class="projLink" onclick="openProjectModal(id)">
-          <div class="middleLayer">
-            <div class="hvrText">Quote Generator</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Smart Brain Project -->
-      <div class="singleProject">
-        <img src="/images/smartbrain.jpg" class="image" />
-        <a href="#myModal" id="5" class="projLink" onclick="openProjectModal(id)">
-          <div class="middleLayer">
-            <div class="hvrText">Smart Brain Face Finder</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Robofriends Project -->
-      <div class="singleProject">
-        <img src="/images/robofriends.jpg" class="image" />
-        <a href="#myModal" id="6" class="projLink" onclick="openProjectModal(id)">
-          <div class="middleLayer">
-            <div class="hvrText">Robofriends Search</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- To-Do List Project -->
-      <div class="singleProject">
-        <img src="/images/todoList.jpg" class="image" />
-        <a href="#myModal" id="7" class="projLink" onclick="openProjectModal(id)">
-          <div class="middleLayer">
-            <div class="hvrText">To-Do List</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Background Generator Project -->
-      <div class="singleProject">
-        <img src="/images/colorgen.jpg" class="image" />
-        <a href="#myModal" id="8" class="projLink" onclick="openProjectModal(id)">
-          <div class="middleLayer">
-            <div class="hvrText">Background Generator</div>
-          </div>
-        </a>
-      </div>
-
+  <!-- Projects -->
+  <section id="projects" class="section section-alt">
+    <div class="section-head">
+      <span class="eyebrow">Work</span>
+      <h2>Projects</h2>
+      <p class="section-sub">A mix of recent builds and older experiments. Some of the
+        older demos may no longer be live.</p>
     </div>
-  </div>
+    <div class="projectsContainer" id="projectsContainer">
+      <!-- Project cards are rendered here by script.js -->
+    </div>
+    <noscript>
+      <p style="text-align:center">Enable JavaScript to view the project gallery, or
+        browse them on <a href="https://github.com/Yujiman85?tab=repositories">GitHub</a>.</p>
+    </noscript>
   </section>
 
-  <!-- Social Media Section -->
-  <section id="socialMediaIcons" style="background: url('/images/binding_dark.png') repeat;">
-    <h2>Social Media</h2>
-    <div>
-      <a href="https://www.facebook.com/Ty-Yuji/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-      <a href="https://www.instagram.com/spacemanci/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://github.com/Yujiman85" target="_blank"><i class="fab fa-github"></i></a>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="section-head">
+      <span class="eyebrow">Say hi</span>
+      <h2>Get in Touch</h2>
+      <p class="section-sub">Have a question or just want to connect? My inbox is open.</p>
+    </div>
+    <a class="email-link" href="mailto:YujiroJenkins@gmail.com">
+      <i class="fas fa-envelope-open-text" aria-hidden="true"></i> YujiroJenkins@gmail.com
+    </a>
+    <div class="social-icons">
+      <a href="https://github.com/Yujiman85" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/spacemanci/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/Ty-Yuji/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" style="background: url('/images/memphis-mini-dark.png') repeat;">
-    <h2><i class="fas fa-envelope-open-text"></i> Contact</h2>
-    <h3>YujiroJenkins@gmail.com</h3>
-  </section>
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Ty Jenkins</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
