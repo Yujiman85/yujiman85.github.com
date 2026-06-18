@@ -1,79 +1,62 @@
 [
     {
-        "name": "Bootstrap 5 Demo",
-        "img": "bootstrapdemo.jpg",
-        "link": "https://www.ty-jenkins.com/bootstrapdemo/",
-        "source": "https://github.com/Yujiman85/bootstrapdemo",
-        "description": "An example of a fully responsive website built using the Bootstrap 5 framework. It also makes use of Bootstrap’s Javascript library to utilize pop-over windows and collapsible menus for smaller screens."
+        "name": "Snake",
+        "img": "snake.png",
+        "link": "https://yujiman85.github.io/snake/",
+        "source": "https://github.com/Yujiman85/snake",
+        "featured": true,
+        "live": true,
+        "tags": ["JavaScript", "Canvas", "Firebase"],
+        "description": "A modern take on the classic Snake game built with vanilla JS and the HTML5 Canvas. Features smooth interpolated movement, progressive difficulty, obstacle waves, particle effects, an online Firebase leaderboard, and a two-player \"Simulsnake\" expert mode."
     },
     {
-        "name": "Wedding RSVP",
-        "img": "weddingrsvp.jpg",
-        "link": "https://weddingrsvpdemo.herokuapp.com/",
-        "source": "https://github.com/Yujiman85/weddingrsvpdemo",
-        "description": "The user will enter their name and email address into a form, they will then confirm the info, lastly that info will be entered into a database to create a list of people attending. Afterwards an email will be sent to them confirming the RSVP."
+        "name": "You Got This",
+        "img": "you-got-this.png",
+        "link": "https://yujiman85.github.io/you-got-this/",
+        "source": "https://github.com/Yujiman85/you-got-this",
+        "featured": true,
+        "live": true,
+        "tags": ["HTML", "CSS", "JavaScript", "Accessibility"],
+        "description": "A single-page site that greets you with a random, uplifting affirmation on every visit. Built with plain HTML, CSS, and JavaScript — with no-repeat logic and accessible, screen-reader-friendly markup."
+    },
+    {
+        "name": "Bootstrap 5 Demo",
+        "img": "bootstrapdemo.jpg",
+        "link": "https://yujiman85.github.io/bootstrapdemo/",
+        "source": "https://github.com/Yujiman85/bootstrapdemo",
+        "tags": ["Bootstrap 5", "Responsive"],
+        "description": "An example of a fully responsive website built using the Bootstrap 5 framework. It also makes use of Bootstrap's Javascript library to utilize pop-over windows and collapsible menus for smaller screens."
     },
     {
         "name": "Light/Dark Mode",
         "img": "lightdarkcombined.jpg",
-        "link": "http://www.ty-jenkins.com/light-dark-mode/",
+        "link": "https://yujiman85.github.io/light-dark-mode/",
         "source": "https://github.com/Yujiman85/light-dark-mode",
+        "tags": ["CSS", "JavaScript"],
         "description": "A demo website showcasing a light mode and dark mode using a combination of CSS and Javascript. Also saves which mode was active when the user leaves the site."
-    },
-    {
-        "name": "Infinite Scroll",
-        "img": "infinitescroll.jpg",
-        "link": "https://streamable.com/wgd2ok",
-        "source": "https://github.com/Yujiman85/infinite-scroll",
-        "description": "Pulls random photos from the Unsplash API and displays them vertically on the page. A new group of images will load every time the user nears the bottom of the window<br> <em>(App Demo links to a video of the project since the API key couldn't be public.)</em>"
-    },
-    {
-        "name": "Quote Generator",
-        "img": "quotegenerator.jpg",
-        "link": "http://www.ty-jenkins.com/quotegenerator/",
-        "source": "https://github.com/Yujiman85/quotegenerator",
-        "description": "Pulls random quotes from an API and displays it on the page. The user can generate a new quote by pressing the button. The user can also tweet the current quote."
-    },
-    {
-        "name": "Smart Brain Face Image Recognizer",
-        "img": "smartbrain.jpg",
-        "link": "https://ty-smart-brain.herokuapp.com/",
-        "source": "https://github.com/Yujiman85/Smart-Brain-Frontend",
-        "description": "A React app that takes an image uploaded by the user and detects whether there is a face present and put bounding box around the it. The app can also detect multiple faces and will display the appropriate amount of bounding boxes."
-    },
-    {
-        "name": "Robo Friends",
-        "img": "robofriends.jpg",
-        "link": "https://robofriends-reactapp.herokuapp.com/",
-        "source": "https://github.com/Yujiman85/robofriends",
-        "description": "A react app that fetches JSON objects (the robots) and displays their picture and name on cards. The app use state to actively search through the objects when the user is typing a name into the search bar."
     },
     {
         "name": "To-Do List",
         "img": "todoList.jpg",
-        "link": "http://ty-jenkins.com/todolist/",
+        "link": "https://yujiman85.github.io/todolist/",
         "source": "https://github.com/Yujiman85/todolist",
+        "tags": ["JavaScript", "HTML", "CSS"],
         "description": "A todo list web app. Allows the user to add tasks to the list, the tasks are separated by whether they are completed or not."
     },
     {
         "name": "Background Color Generator",
         "img": "colorgen.jpg",
-        "link": "http://www.ty-jenkins.com/background-generator/",
+        "link": "https://yujiman85.github.io/background-generator/",
         "source": "https://github.com/Yujiman85/background-generator",
+        "tags": ["JavaScript", "CSS"],
         "description": "A single HTML page with a button that generates two random colors, then sets the first and second color as the background gradient from left to right."
     },
     {
         "name": "Landing Page",
         "img": "landingpage.jpg",
-        "link": "http://www.ty-jenkins.com/landingpagedemo/",
+        "link": "https://yujiman85.github.io/landingpagedemo/",
         "source": "https://github.com/Yujiman85/landingpagedemo",
+        "tags": ["HTML", "CSS"],
         "description": "A simple example of a landing page."
-    },
-    {
-        "name": "React E-Commerce Demo",
-        "img": "crwnclothing.jpg",
-        "link": "https://crwn-clothing-tyjenkins.herokuapp.com/",
-        "source": "https://github.com/Yujiman85/ty-crwn-clothing",
-        "description": "A React e-commerce site that allows a user to sign in with email or Google authentication. The user can add items to their cart, in multiple quantities if they choose. A checkout page shows all the items in the cart, the user can increase or decrease the quantity and the price will update dynamically. Future Stripe implementation will be able to mimic card payments."
     }
 ]
