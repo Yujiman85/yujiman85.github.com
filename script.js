@@ -53,10 +53,6 @@
   const escapeAttr = (s) => String(s).replace(/"/g, '&quot;');
 
   function cardHTML(p) {
-    const badge = p.live
-      ? '<span class="badge"><span class="dot"></span> Live</span>'
-      : '';
-
     const tags = Array.isArray(p.tags) && p.tags.length
       ? '<div class="project-tags">' + p.tags.map((t) => `<span>${t}</span>`).join('') + '</div>'
       : '';
@@ -76,7 +72,6 @@
     return `
       <article class="project-card">
         <div class="project-thumb">
-          ${badge}
           <img src="./images/${escapeAttr(p.img)}" alt="${escapeAttr(p.name)} screenshot" loading="lazy" />
         </div>
         <div class="project-body">

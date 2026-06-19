@@ -17,7 +17,7 @@
         "featured": true,
         "live": true,
         "tags": ["HTML", "CSS", "JavaScript", "Accessibility"],
-        "description": "A single-page site that greets you with a random, uplifting affirmation on every visit. Built with plain HTML, CSS, and JavaScript — with no-repeat logic and accessible, screen-reader-friendly markup."
+        "description": "A single-page site that greets you with a random, uplifting affirmation on every visit. Built with plain HTML, CSS, and JavaScript, with no-repeat logic and accessible, screen-reader-friendly markup."
     },
     {
         "name": "Bootstrap 5 Demo",

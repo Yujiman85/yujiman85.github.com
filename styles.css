@@ -1,5 +1,5 @@
 /* ============================================================
-   Ty Jenkins — Portfolio
+   Ty Jenkins Portfolio
    Palette: "Coastal Vibes"
    Dusk Blue #3d5a80 · Powder Blue #98c1d9 · Light Cyan #e0fbfc
    Burnt Peach #ee6c4d · Jet Black #293241
@@ -344,29 +344,6 @@ img { max-width: 100%; display: block; }
   transition: transform 0.4s ease;
 }
 .project-card:hover .project-thumb img { transform: scale(1.06); }
-.badge {
-  position: absolute;
-  top: 12px; left: 12px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--accent);
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 5px 11px;
-  border-radius: 999px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-.badge .dot {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: #fff;
-  animation: pulse 1.6s ease-in-out infinite;
-}
-@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
 
 .project-body { display: flex; flex-direction: column; flex: 1; padding: 22px; }
 .project-body h3 { margin: 0 0 10px; font-size: 1.3rem; }
