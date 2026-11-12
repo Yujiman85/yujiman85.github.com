@@ -1,24 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="light">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ty Jenkins | Résumé</title>
+  <meta name="description" content="Résumé of Ty Jenkins, a Philadelphia web developer working in Drupal, PHP and JavaScript.">
+  <meta name="theme-color" content="#3d5a80">
 
- 	<meta http-equiv="Cache-control" content="NO-CACHE">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://ty-jenkins.com/resume.html">
+  <meta property="og:title" content="Ty Jenkins | Résumé">
+  <meta property="og:description" content="Web developer in Philadelphia working in Drupal, PHP and JavaScript.">
+  <meta property="og:image" content="https://ty-jenkins.com/images/metaimage.png">
+  <meta property="twitter:card" content="summary_large_image">
 
-	<title>Resume</title>
+  <!-- Set the theme before paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = saved
+          || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { /* default light from the markup */ }
+    })();
+  </script>
 
-	<link rel="stylesheet" type="text/css" href="/css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
+
 <body>
-	  <div class="container">
-	  	<nav>
-       		<a id="homenav" href="http://www.ty-jenkins.com">Home</a>•
-       		<a id="aboutmenav" href="aboutme.html">About Me</a>•
-       		<a id="resumenav" href="resume.html">Resume</a>
-   		 </nav>
-	  	<p class="header" style="background-color: #ff0000;">Resume</p>
-	  	If the resume is not showing or you just want the actual file please click <a href="/files/Ty-Jenkins-Resume.docx" style="text-decoration: underline;">here</a> to download the Word file. <br><br>
-	    <img src="/images/Ty-Jenkins-Resume.jpg" width="80%">
-	  </div>
+  <header class="navbar" id="navbar">
+    <a href="./" class="brand">Ty<span>Jenkins</span></a>
+
+    <!-- Shown on small screens only; opens the nav links as a dropdown.
+         It sits before the nav so Tab moves from it into the open menu. -->
+    <button id="menuToggle" class="menu-toggle" type="button"
+            aria-label="Menu" aria-controls="primaryNav" aria-expanded="false">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <nav class="nav-links" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a href="./#projects">Projects</a></li>
+        <li><a href="resume.html" aria-current="page">Résumé</a></li>
+        <li><a href="./#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button id="themeToggle" class="theme-toggle" type="button"
+            aria-label="Switch color theme" title="Switch color theme">
+      <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main class="resume">
+    <article class="resume-card">
+      <header class="resume-head">
+        <div>
+          <h1 class="resume-name">Ty Jenkins</h1>
+          <p class="resume-role">Web Developer</p>
+        </div>
+        <ul class="resume-contact">
+          <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Philadelphia, PA</li>
+          <li><i class="fas fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:YujiroJenkins@gmail.com">YujiroJenkins@gmail.com</a></li>
+          <li><i class="fab fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/Yujiman85">github.com/Yujiman85</a></li>
+          <li><i class="fas fa-globe" aria-hidden="true"></i>
+            <a href="https://ty-jenkins.com/">ty-jenkins.com</a></li>
+        </ul>
+      </header>
+
+      <div class="resume-actions">
+        <a class="btn btn-primary resume-download" href="files/Ty-Jenkins-Resume.pdf"
+           download="Ty-Jenkins-Resume.pdf">
+          <i class="fas fa-file-download" aria-hidden="true"></i> Download PDF
+        </a>
+        <p class="resume-updated">Updated <time datetime="2026-11">November 2026</time></p>
+      </div>
+
+      <section class="resume-section" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Summary</h2>
+        <p>Web developer at Zivtech, a Philadelphia digital agency specializing in Drupal and
+          open-source web development. I build and maintain client sites with PHP, Drupal and
+          MySQL and keep them secure, accessible and up to date. Background in JavaScript,
+          React and Node, with a degree in Information Science and Technology from Penn State
+          focused on user interfaces.</p>
+      </section>
+
+      <section class="resume-section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+
+        <div class="resume-item">
+          <div class="resume-item-head">
+            <h3>Developer</h3>
+            <p class="resume-dates"><time datetime="2022-03">Mar 2022</time> – Present</p>
+          </div>
+          <p class="resume-meta">Zivtech · Philadelphia, PA</p>
+          <ul>
+            <li>Build and maintain Drupal 10 and 11 sites for healthcare and higher-education clients.</li>
+            <li>Keep Drupal core and contributed modules current with Composer, including security
+              releases, patches and update hooks.</li>
+            <li>Deploy and support sites on Pantheon and Acquia, with local environments in Lando.</li>
+            <li>Test for WCAG 2.2 AA accessibility and check changes with Playwright browser tests and
+              visual regression testing.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <div class="resume-item-head">
+            <h3>Mental Health Worker – Team Lead</h3>
+            <p class="resume-dates"><time datetime="2011-10">Oct 2011</time> – <time datetime="2022-03">Mar 2022</time></p>
+          </div>
+          <p class="resume-meta">Gemma Services</p>
+          <ul>
+            <li>Promoted from part-time to full-time lead staff for exceeding goals and strong communication.</li>
+            <li>Worked with cross-department teams to build treatment plans that led to successful discharges.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <div class="resume-item-head">
+            <h3>Field Technician</h3>
+            <p class="resume-dates"><time datetime="2007-06">Jun 2007</time> – <time datetime="2010-06">Jun 2010</time></p>
+          </div>
+          <p class="resume-meta">Comcast</p>
+          <ul>
+            <li>Reduced the order backlog by completing complex jobs and resolved a high volume of
+              service tickets.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+
+        <div class="resume-item">
+          <div class="resume-item-head">
+            <h3>Snake</h3>
+            <p class="resume-tags">JavaScript, Canvas, Firebase</p>
+          </div>
+          <p>A modern take on the classic game: smooth movement, rising difficulty, obstacle waves,
+            an online Firebase leaderboard and a two-player mode.
+            <a href="https://yujiman85.github.io/snake/">yujiman85.github.io/snake</a></p>
+        </div>
+
+        <div class="resume-item">
+          <div class="resume-item-head">
+            <h3>You Got This</h3>
+            <p class="resume-tags">HTML, CSS, JavaScript</p>
+          </div>
+          <p>A single page that shows a random affirmation on each visit, with no-repeat logic and
+            screen-reader-friendly markup.
+            <a href="https://yujiman85.github.io/you-got-this/">yujiman85.github.io/you-got-this</a></p>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <ul class="resume-skills">
+          <li><strong>Languages:</strong> PHP, JavaScript, SQL, HTML, CSS</li>
+          <li><strong>Frameworks and CMS:</strong> Drupal, React, Node.js, Express</li>
+          <li><strong>Tools:</strong> Git, Composer, Playwright, Lando, Pantheon, Acquia, Jira</li>
+          <li><strong>Practices:</strong> Accessibility (WCAG 2.2 AA), responsive design, code review</li>
+        </ul>
+      </section>
+
+      <section class="resume-section" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+
+        <div class="resume-item">
+          <div class="resume-item-head">
+            <h3>B.S. Information Science and Technology</h3>
+            <p class="resume-dates"><time datetime="2003">2003</time> – <time datetime="2007">2007</time></p>
+          </div>
+          <p class="resume-meta">Pennsylvania State University · Focus on user interfaces and interaction</p>
+        </div>
+
+        <div class="resume-item">
+          <div class="resume-item-head">
+            <h3>Web Development Coursework</h3>
+            <p class="resume-dates"><time datetime="2018">2018</time> – <time datetime="2019">2019</time></p>
+          </div>
+          <p class="resume-meta">Zero to Mastery Academy · JavaScript, React, Node.js</p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Ty Jenkins</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+</html>

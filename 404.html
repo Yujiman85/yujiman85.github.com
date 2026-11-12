@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found | Ty Jenkins</title>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = saved
+          || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { /* default light from the markup */ }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Root-relative paths: GitHub Pages serves this page at any missing URL -->
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+</head>
+<body>
+  <main class="section not-found">
+    <div class="section-head">
+      <span class="eyebrow">404</span>
+      <h1>Page not found</h1>
+      <p class="section-sub">That page doesn't exist or has moved. Looking for my résumé?
+        It now lives on its own page, with a PDF download.</p>
+    </div>
+    <p class="not-found-actions">
+      <a href="/resume.html" class="btn btn-primary">View my résumé</a>
+      <a href="/" class="btn btn-outline">Go to the home page</a>
+    </p>
+  </main>
+</body>
+</html>
