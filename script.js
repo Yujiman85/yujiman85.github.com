@@ -44,6 +44,42 @@
 })();
 
 /* ------------------------------------------------------------------
+   Mobile menu: the hamburger opens/closes the nav dropdown. Closes on
+   a link tap, Escape, a tap outside the bar, or growing past mobile.
+   ------------------------------------------------------------------ */
+(function () {
+  const nav = document.getElementById('navbar');
+  const btn = document.getElementById('menuToggle');
+  const menu = document.getElementById('primaryNav');
+  if (!nav || !btn || !menu) return;
+  const icon = btn.querySelector('i');
+
+  function setOpen(open) {
+    nav.classList.toggle('menu-open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    if (icon) icon.className = open ? 'fas fa-times' : 'fas fa-bars';
+  }
+  const isOpen = () => nav.classList.contains('menu-open');
+
+  btn.addEventListener('click', function () { setOpen(!isOpen()); });
+  menu.addEventListener('click', function (e) {
+    if (e.target.closest('a')) setOpen(false);
+  });
+  document.addEventListener('click', function (e) {
+    if (isOpen() && !nav.contains(e.target)) setOpen(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && isOpen()) {
+      setOpen(false);
+      btn.focus();
+    }
+  });
+  window.matchMedia('(min-width: 641px)').addEventListener('change', function (e) {
+    if (e.matches) setOpen(false);
+  });
+})();
+
+/* ------------------------------------------------------------------
    Render the project gallery from projects.json.
    ------------------------------------------------------------------ */
 (function () {

@@ -54,7 +54,14 @@
   <header class="navbar" id="navbar">
     <a href="#home" class="brand">Ty<span>Jenkins</span></a>
 
-    <nav class="nav-links" aria-label="Primary">
+    <!-- Shown on small screens only; opens the nav links as a dropdown.
+         It sits before the nav so Tab moves from it into the open menu. -->
+    <button id="menuToggle" class="menu-toggle" type="button"
+            aria-label="Menu" aria-controls="primaryNav" aria-expanded="false">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <nav class="nav-links" id="primaryNav" aria-label="Primary">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
